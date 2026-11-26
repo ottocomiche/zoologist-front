@@ -39,7 +39,7 @@ sex = st.selectbox(
     "Sex",
     ["Male", "Female"]
 )
-API_URL = "http://127.0.0.1:8000/predict"
+API_URL = f"{st.secrets['API_URL']}/predict"
 
 params = {
     "island": island,
